@@ -1,0 +1,41 @@
+#-------------------
+#interface type
+# "PPP" or others=ETHER
+
+Interface	:ETHER
+
+#-------------------
+# PPP
+
+#DialUp		:0357881011
+#TonePulse	:TONE
+#Auth_ID		:nessie@terra
+#Auth_Password	:*******
+
+#-------------------
+# ETHER
+
+# "ON" or others
+UseDHCP		:ON
+#UseDNS		:ON
+
+#PrimaryDNS		:
+#SecondaryDNS	:
+#Gateway		:172.22.0.201
+
+#ClientName		:localhost
+#DomainName		:ps2_nt
+
+#ClientIP		:172.22.140.017
+#ClientMask		:255.255.000.000
+#ClientBcast	:172.22.255.255
+
+#-------------------
+# hosts files
+
+# "ON" or others
+UseHostsFile	:ON
+
+Hosts_common	:/image/ffxi/net/hosts_common
+Hosts_local		:/image/ffxi/local/hosts_local
+

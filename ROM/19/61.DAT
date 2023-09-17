@@ -1,0 +1,34 @@
+#####
+# FFXI EXODUS Server
+172.22.0.70	exodus
+
+#####
+# FFXi test server
+
+172.22.100.101	n1
+
+#####
+#	T10000 USB-ETHER IP address list
+
+172.23.140.181	ps2_hiwasaki	# for SQ SOUNDS
+172.23.140.182	ps2_hnoda		#
+172.23.140.177	ps2_jnakamu		#
+172.23.140.178	ps2_mizuta		#
+172.23.141.120	usb_1120		#
+172.23.141.119	usb_1119		#
+172.23.141.20	ps2_tanioka		#
+172.23.141.56	ps2_myamagu		#
+172.23.141.52	ps2_kmiko		#
+
+172.23.127.76   ps2_tyajima		#
+
+#####
+#	dummy entry for PPP
+
+127.0.0.1		localhost
+
+
+#####
+#	otemachi DC
+
+211.130.114.121	alpha

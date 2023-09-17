@@ -1,0 +1,487 @@
+DEF DATASET 2003022101
+  DEF SELECTNODE 0
+    LABEL "ROOT NODE"
+    HEADER "" "" "" ""
+    HELP ""
+    EVAL "GAME.INFIELD"
+    EVAL "GAME.GMTIME"
+    EVAL "GENERIC.PLATFORM"
+    EVAL "GENERIC.VERSION"
+    SLOT 1 "‹K–ñˆá”½sˆ×‚ðŽó‚¯‚Ä‚¢‚é" "I want to report a violation of the PlayOnline user agreement." "Ich m…Õchte eine Verletzung der PlayOnline-Benutzervereinbarung melden." "J'aimerais signaler une violation du contrat de licence PlayOnline."
+    SLOT 2 "ƒQ[ƒ€‚Ìis‚ð’˜‚µ‚­–W‚°‚éáŠQ" "I can't move my character or log out of the game." "Ich kann meinen Charakter nicht bewegen oder ich kann mich nicht ausloggen." "Je ne peux ni d…Èplacer mon personnage ni me d…Èconnecter du jeu."
+    SLOT 3 "ƒQ[ƒ€“à‚Ì‘€ì‚ª•ª‚©‚ç‚È‚¢" "I need help with the game controls." "Ich ben…Õtige Hilfe bei der Bedienung des Spiels." "J'ai besoin d'aide sur les commandes de jeu."
+    SLOT 4 "‹@Ší“I‚È–â‘è" "I need technical support." "Ich ben…Õtige technischen Support." "J'ai besoin d'assistance technique."
+  END NODE
+  DEF SELECTNODE 1
+    LABEL "[‹K–ñˆá”½]‹K–ñˆá”½ƒgƒbƒv"
+    HEADER "ƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‰ïˆõ—˜—p‹K–ñ‚Ì‹ÖŽ~€–Ú‚ÉŠÖ‚·‚é‹Lq‚ð‚²——‚É‚È‚è‚Ü‚µ‚½‚©H\n" "Have you read the list of prohibited behavior in the PlayOnline user agreement?\n" "Hast du die Liste der verbotenen Verhaltensweisen gelesen, die in der PlayOnline-Benutzervereinbarung aufgef…Ûhrt ist?\n" "Avez-vous lu la liste des comportements interdits par le contrat de licence PlayOnline ?\n"
+    HELP ""
+    SLOT 1 "“Ç‚Ý‚Ü‚µ‚½B" "Yes, I have." "Ja, habe ich." "Oui."
+    SLOT 2 "“Ç‚ñ‚Å‚¢‚È‚¢‚Ì‚ÅŠÈ’P‚Èà–¾‚ª‚Ù‚µ‚¢‚Å‚·B" "No. Please elaborate." "Nein. Was steht dort?" "Non. Je vous …Ècoute."
+  END NODE
+  DEF SELECTNODE 2
+    LABEL "[‹K–ñˆá”½]‹K–ñ‚Í“Ç‚ñ‚Å‚¢‚é"
+    HEADER "GM‚ªŽæ‚è’÷‚Ü‚é‹ÖŽ~sˆ×‚Æ‚ÍA’Pƒ‚ÈuŒ™‚ª‚ç‚¹v‘S‚Ä‚Å‚Í‚È‚­Aƒ‹[ƒ‹‚ÉŠî‚Ã‚«GM‚ª‹K–ñˆá”½sˆ×‚Å‚ ‚é‚©”»’f‚µA•K—v‚Å‚ ‚ê‚Î‘Îˆ‚·‚é‚±‚Æ‚É‚È‚è‚Ü‚·B" "GMs make judgments based on the rules listed in the PlayOnline user agreement. This is not limited to the regulation of harassment." "GMs f…Ãllen ihre Entscheidungen anhand der Verhaltensregeln, die in der PlayOnline-Benutzervereinbarung aufgef…Ûhrt sind. Diese sind nicht auf den Sachverhalt der Bel…Ãstigung beschr…Ãnkt." "Les GM portent des jugements en fonction des r…Çgles r…Èpertori…Èes dans le contrat de licence PlayOnline. Ceux-ci ne se limitent pas …¿ la r…Èglementation relative au harc…Çlement."
+    HELP ""
+    SLOT 1 "‚Í‚¢B’P‚È‚éuŒ™‚ª‚ç‚¹v‚Å‚Í‚È‚­ƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“—˜—p‹K–ñ‚É‚ ‚é‹ÖŽ~sˆ×‚¾‚ÆŽv‚¤‚Ì‚ÅGM‚É”»’f‚µ‚Ä‚Ù‚µ‚¢‚Å‚·B" "Yes, this is a violation of the user agreement. I would like a GM to investigate." "Ja, hierbei handelt es sich um eine Verletzung der Benutzervereinbarung. Ich m…Õchte, dass ein GM dieser Sache nachgeht." "Oui, il s'agit d'une violation du contrat de licence. J'aimerais qu'un GM enqu…Éte."
+    SLOT 2 "‚»‚ê‚Ù‚Ç[‚È‚±‚Æ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB" "No, this is not a violation." "Nein, es handelt sich um keine Verletzung der Regeln." "Non, il ne s'agit pas d'une violation."
+  END NODE
+  DEF QUESTIONNODE 3
+    LABEL "[GMƒR[ƒ‹]ƒnƒ‰ƒXƒƒ“ƒg"
+    HEADER "GMƒR[ƒ‹‚ðs‚¢‚Ü‚·B" "A GM will be called." "Es wird ein GM gerufen." "Nous allons faire appel …¿ un GM."
+    HELP ""
+    EVAL "GMREPORT.GMCALL"
+    EVAL "GMREPORT.HARASSMENT"
+    SLOT 1 "Input:REQUIRE" "GMCALL.INPUT" "“à—e‚ðŠÈŒ‰‚É‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B" "Please describe your problem." "Beschreibe bitte das Problem." "Veuillez d…Ècrire votre probl…Çme."
+  END NODE
+  DEF QUESTIONNODE 4
+    LABEL "[GMƒR[ƒ‹]ƒXƒ^ƒbƒN"
+    HEADER "GMƒR[ƒ‹‚ðs‚¢‚Ü‚·B" "A GM will be called." "Es wird ein GM gerufen." "Nous allons faire appel …¿ un GM."
+    HELP ""
+    EVAL "GMREPORT.GMCALL"
+    EVAL "GMREPORT.STUCK"
+    EVAL "EXEC.RESCUE"
+    SLOT 1 "Input:REQUIRE" "GMCALL.INPUT" "“à—e‚ðŠÈŒ‰‚É‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B" "Please describe your problem." "Beschreibe bitte das Problem." "Veuillez d…Ècrire votre probl…Çme."
+  END NODE
+  DEF QUESTIONNODE 5
+    LABEL "[GMƒR[ƒ‹]ˆê”Ê"
+    HEADER "GMƒR[ƒ‹‚ðs‚¢‚Ü‚·B\n" "A GM will be called.\n" "Es wird ein GM gerufen.\n" "Nous allons faire appel …¿ un GM.\n"
+    HELP ""
+    EVAL "GMREPORT.GMCALL"
+    SLOT 1 "Input:REQUIRE" "GMCALL.INPUT" "“à—e‚ðŠÈŒ‰‚É‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B" "Please describe your problem." "Beschreibe bitte das Problem." "Veuillez d…Ècrire votre probl…Çme."
+  END NODE
+  DEF QUESTIONNODE 6
+    LABEL "[GMƒR[ƒ‹]ƒ}ƒCƒ‹[ƒ€“àƒXƒ^ƒbƒN"
+    HEADER "GMƒR[ƒ‹‚ðs‚¢‚Ü‚·B" "A GM will be called." "Es wird ein GM gerufen." "Nous allons faire appel …¿ un GM."
+    HELP ""
+    EVAL "GMREPORT.GMCALL"
+    EVAL "GMREPORT.STUCK"
+    SLOT 1 "Input:REQUIRE" "GMCALL.INPUT" "“à—e‚ðŠÈŒ‰‚É‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B" "Please describe your problem." "Beschreibe bitte das Problem." "Veuillez d…Ècrire votre probl…Çme."
+  END NODE
+  DEF QUESTIONNODE 7
+    LABEL "[GMƒR[ƒ‹]’Ês–WŠQ"
+    HEADER "GMƒR[ƒ‹‚ðs‚¢‚Ü‚·B\n" "A GM will be called.\n" "Es wird ein GM gerufen.\n" "Nous allons faire appel …¿ un GM.\n"
+    HELP ""
+    EVAL "GMREPORT.GMCALL"
+    EVAL "GMREPORT.BLOCK"
+    SLOT 1 "Input:REQUIRE" "GMCALL.INPUT" "“à—e‚ðŠÈŒ‰‚É‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B" "Please describe your problem." "Beschreibe bitte das Problem." "Veuillez d…Ècrire votre probl…Çme."
+  END NODE
+  DEF QUESTIONNODE 8
+    LABEL "[QUESTION]–¢Žg—p"
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 9
+    LABEL "[I’[]ƒuƒ‰ƒbƒNƒŠƒXƒg"
+    HEADER "Œ¾—t‚Å•s–ù‰õ‚È‚±‚Æ‚ðŒ¾‚í‚ê‚Ä‚¢‚é‚Ì‚Å‚ ‚ê‚ÎA\n/blacklist add ƒLƒƒƒ‰ƒNƒ^[–¼\n‚ð‚¨ŽŽ‚µ‚­‚¾‚³‚¢Bs“®‚Ås‚í‚ê‚Ä‚¢‚é‚Ì‚Å‚ ‚ê‚ÎA‚»‚Ìê‚ð—§‚¿‹Ž‚é‚Æ—Ç‚¢‚Å‚µ‚å‚¤B\n" "If someone makes offensive remarks, try using the following command: \n\n/blacklist add [character_name]\n\nIf you find someone's actions offensive, try leaving the area.\n" "Wenn dich ein Spieler beleidigt, kann sich der folgende Befehl als n…Ûtzlich erweisen: \n\n/blacklist add [Charaktername]\n\nWenn du dich durch die Handlungen eines Spielers verletzt f…Ûhlst, solltest du am besten eine andere Gegend aufzusuchen.\n" "Si quelqu'un prof…Çre des remarques d…Èsobligeantes, essayez d'utiliser la commande suivante : \n\n/blacklist add [nom_du_personnage] (ajouter ce personnage …¿ la liste noire) \n\nSi vous jugez les actions d'un personnage d…Èsobligeantes, essayez de quitter la zone.\n"
+    HELP ""
+  END NODE
+  DEF SELECTNODE 10
+    LABEL "[I’[]ƒQ[ƒ€‚É–ß‚é"
+    HEADER "ƒQ[ƒ€‚É–ß‚è‚Ü‚·B" "Returning to FFXI." "R…Ûckkehr zu FFXI." "Retour …¿ FFXI."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 11
+    LABEL "[I’[]–¢Žg—p"
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 12
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 13
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 14
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 15
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 16
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 17
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 18
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 19
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 20
+    LABEL ""
+    HEADER "" "" "" ""
+    HELP ""
+  END NODE
+  DEF SELECTNODE 21
+    LABEL "[‹K–ñˆá”½]à–¾"
+    HEADER "GM‚ªŽæ‚è’÷‚Ü‚é‹K–ñˆá”½sˆ×‚Æ‚ÍA“Á’è‚Ìl•¨‚âƒOƒ‹[ƒvilŽíE–¯‘°E’nˆæE@‹³E’c‘Ìj‚É‘Î‚µ‚Ä”îæŽ’†‚â¸_“I‹ê’É‚ð—^‚¦‚é‚æ‚¤‚ÈŒ¾“®‚Ì‚±‚Æ‚Å‚·B’Pƒ‚ÉuŒ™‚ª‚ç‚¹v‚ðŽæ‚è’÷‚Ü‚é‚Æ‚¢‚¤‚±‚Æ‚Å‚Í‚È‚­A‚ ‚­‚Ü‚ÅŽÐ‰ï’Ê”Oã‹–—e‚µ‚ª‚½‚¢sˆ×‚É‘Î‚µ‚Ä’fŒÅ‚½‚éŽp¨‚Å—Õ‚Þ‚Æ‚¢‚¤‚±‚Æ‚ðˆÓ–¡‚µ‚Ä‚¢‚Ü‚·B\n" "GMs handle violations of the PlayOnline user agreement. This includes derogatory and/or hateful comments that are based on a person's race, national origin, ethnicity, religion, or other such affiliation. In addition to personal attacks, GMs watch out for any behavior that is generally regarded as socially unacceptable.\n" "GMs sind daf…Ûr zust…Ãndig, im Falle von Verletzungen der PlayOnline-Benutzervereinbarung einzuschreiten. Dies schlie…¾t beleidigende, bzw. provozierende …£u…¾erungen bez…Ûglich der Nationalit…Ãt, ethnischen Herkunft, Religion, usw. ein. Neben pers…Õnlichen Angriffen ahnden GMs jegliche Art mutwillig st…Õrenden Verhaltens.\n" "Les GM traitent les cas de violation du contrat de licence PlayOnline. Ceci comprend les commentaires d…Èsobligeants et/ou haineux relatifs …¿ la race, la nationalit…È, l'ethnicit…È, la religion ou tout autre attache d'une personne. Les GM surveillent non seulement les attaques personnelles, mais aussi tout comportement jug…È socialement inacceptable.\n"
+    HELP ""
+    SLOT 1 "‚Í‚¢B’P‚È‚éuŒ™‚ª‚ç‚¹v‚Å‚Í‚È‚­ƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“—˜—p‹K–ñ‚É‚ ‚é‹ÖŽ~sˆ×‚¾‚ÆŽv‚¤‚Ì‚ÅGM‚É”»’f‚µ‚Ä‚Ù‚µ‚¢‚Å‚·B" "Yes, this is a violation of the user agreement. I would like a GM to mediate." "Ja, dies stellt eine Verletzung der Benutzervereinbarung dar. Ich m…Õchte, dass mir ein GM in dieser Angelegenheit hilft." "Oui, il s'agit d'une violation du contrat de licence. J'aimerais qu'un GM intervienne."
+    SLOT 2 "‚»‚ê‚Ù‚Ç[‚È‚±‚Æ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB" "No, this does not require GM attention." "Nein, die Angelegenheit erfordert kein Einschreiten eines GM." "Non, cela ne n…Ècessite pas l'intervention d'un GM."
+  END NODE
+  DEF SELECTNODE 22
+    LABEL "[isáŠQ]áŠQƒgƒbƒv"
+    HEADER "‹ï‘Ì“I‚ÈáŠQ‚Ì“à—e‚ð‹³‚¦‚Ä‚­‚¾‚³‚¢B\n" "What kind of problem are you experiencing?\n" "Um was f…Ûr ein Problem handelt es sich?\n" "Quel genre de probl…Çme rencontrez-vous ?\n"
+    HELP ""
+    SLOT 1 "ˆÚ“®‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB" "My character is stuck." "Mein Charakter steckt fest." "Mon personnage est coinc…È."
+    DISP 1 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 5 "ˆÚ“®‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB" "My character is stuck." "Mein Charakter steckt fest." "Mon personnage est coinc…È."
+    DISP 5 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 2 "ƒƒOƒAƒEƒg‚âƒVƒƒƒbƒgƒ_ƒEƒ“‚ªŽÀs‚Å‚«‚Ü‚¹‚ñB" "I am unable to log out or shut down." "Ich kann mich nicht ausloggen oder das Spiel beenden." "Je n'ai pas r…Èussi …¿ me d…Èconnecter ou …¿ …Èteindre le jeu."
+    SLOT 3 "’Ês–WŠQ‚ðŽó‚¯‚Ä‚¢‚Ü‚·B" "Someone is blocking my way." "Jemand versperrt mir den Weg." "Quelqu'un me bloque le passage."
+    SLOT 4 "‚»‚Ì‘¼" "Other." "Anderes Problem." "Autre."
+  END NODE
+  DEF SELECTNODE 23
+    LABEL "[isáŠQ]ˆÚ“®•s‰Â[PS2]"
+    HEADER "GM‚É‚æ‚èˆÚ“®‚ª§ŒÀ‚³‚ê‚Ä‚¢‚È‚¯‚ê‚ÎAƒRƒ“ƒgƒ[ƒ‰‚ÌŒÌá‚©A’nŒ`‚Ì•s‹ï‡‚É‚æ‚èˆÚ“®‚Å‚«‚È‚­‚È‚Á‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·BGM‚É‚æ‚é§ŒÀ‚ÉS“–‚½‚è‚ª‚ ‚éê‡‚ÍAGM‚ÌŽwŽ¦‚É]‚Á‚Ä‚­‚¾‚³‚¢B‹@Ší‚ÌŒÌá‚ª‹^‚í‚µ‚¢ê‡‚ÍAƒRƒ“ƒgƒ[ƒ‰‚ðˆê“x”²‚¢‚ÄÄ“x·‚µž‚ÞA‘¼‚ÌƒRƒ“ƒeƒ“ƒc‚Å‚Í—LŒø‚©‚È‚Ç‚ð‚¨’²‚×‚­‚¾‚³‚¢B‚¢‚¸‚ê‚Ìê‡‚Å‚à‚È‚­A’nŒ`‚É‚Í‚Ü‚Á‚Ä‚¢‚é‚æ‚¤‚Å‚ ‚ê‚ÎGM‚ª‹M•û‚ðˆÚ“®‰Â”\‚ÈÅ‚à‹ß‚¢ƒ|ƒCƒ“ƒg‚Ü‚ÅˆÚ“®‚³‚¹‚Ü‚·B\n" "First, a GM may be restricting your movement. If so, wait for instructions from the GM. If you think your controller is malfunctioning, try removing and reinserting your controller. You can also test your controller in other PlayOnline services. Lastly, if you are stuck inside a wall or other zone geometry, a GM can get you out.\n" "Es ist m…Õglich, dass deine Bewegungsfreiheit durch einen GM eingeschr…Ãnkt wird. Wenn dies der Fall ist, warte bitte die Anweisungen des GM ab. Da es sich auch um ein Controller-Problem handeln k…Õnnte, solltest du die Verbindung des Controllers pr…Ûfen und den Controller kurz vom System trennen und erneut anschlie…¾en. Zum Testen des Controllers stehen au…¾erdem weitere PlayOnline-Dienste zur Verf…Ûgung. Wenn du in einer Wand oder anderen Struktur feststeckst, kann dir ein GM weiterhelfen.\n" "Tout d'abord, un GM peut limiter vos d…Èplacements. Si tel est le cas, attendez ses instructions. Si vous pensez qu'il s'agit d'un dysfonctionnement de votre manette, d…Èbranchez, puis rebranchez-la. Vous pouvez …Ègalement tester votre manette …¿ l'aide d'autres services PlayOnline. Enfin, si vous …Étes g…Én…È par un mur ou tout autre obstacle, un GM peut y rem…Èdier.\n"
+    HELP ""
+    SLOT 1 "GM‚É§ŒÀ‚³‚ê‚Ä‚¢‚é‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñBGM‚É‚æ‚éˆÚ“®‚ðŠó–]‚µ‚Ü‚·B" "I am stuck and need to get out. My movement is not being restricted by a GM." "Ich sitze fest und ben…Õtige Hilfe. Meine Bewegung wird nicht durch einen GM eingeschr…Ãnkt." "Je suis coinc…È et je dois sortir. Mes d…Èplacements ne sont pas limit…Ès par un GM."
+    DISP 1 "GAME.INFIELD" "S:eq" "on"
+    SLOT 2 "GM‚É§ŒÀ‚³‚ê‚Ä‚¢‚é‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñBGM‚É‚æ‚éˆÚ“®‚ðŠó–]‚µ‚Ü‚·B" "I am stuck and need to get out. My movement is not being restricted by a GM." "Ich sitze fest und ben…Õtige Hilfe. Meine Bewegung wird nicht durch einen GM eingeschr…Ãnkt." "Je suis coinc…È et je dois sortir. Mes d…Èplacements ne sont pas limit…Ès par un GM."
+    DISP 2 "GAME.INFIELD" "S:ne" "on"
+  END NODE
+  DEF SELECTNODE 24
+    LABEL "[isáŠQ]ƒƒOƒAƒEƒg•s‰Â"
+    HEADER "ƒJƒEƒ“ƒgƒ_ƒEƒ“‚ª‚O‚É‚È‚Á‚½‚Ì‚ÉƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‚Ü‚Å–ß‚ç‚È‚¢ê‡‚ÍAƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‚Ìƒgƒ‰ƒuƒ‹‚ªŽå‚ÈŒ´ˆö‚Å‚·B‚¨Žè”‚Å‚·‚ª‚µ‚Î‚ç‚­ŽžŠÔ‚ð‚¨‚¢‚ÄAÄ“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B" "If you can't return to PlayOnline after the countdown reaches zero, it usually means that there is a problem with PlayOnline. Please wait a few minutes and try again." "Wenn du nach Ende des Countdowns nicht zu PlayOnline zur…Ûckkehren kannst, liegt in der Regel ein Problem mit PlayOnline vor. Warte bitte einige Minuten und versuche es dann erneut." "S'il vous est impossible de revenir …¿ PlayOnline au terme du compte …¿ rebours, il s'agit g…Èn…Èralement d'un probl…Çme li…È …¿ PlayOnline. Patientez quelques minutes et r…Èessayez."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 25
+    LABEL "[isáŠQ]’Ês–WŠQ"
+    HEADER "‘¼‚ÌƒLƒƒƒ‰ƒNƒ^[‚ªŽ×–‚‚É‚È‚Á‚Äis‚Å‚«‚È‚¢ê‡AˆÚ“®‚µ‚½‚¢•ûŒü‚É5•bˆÈãis‚µ‚æ‚¤‚Æ‚·‚é‚±‚Æ‚Å‚»‚ÌƒLƒƒƒ‰ƒNƒ^[‚ð’Ê‚è”²‚¯‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B‘ŠŽè‚ªí“¬’†‚Å‚ ‚Á‚½‚èA‰½‚ç‚©‚Ì——R‚Å‘€ì•s”\‚É‚È‚Á‚Ä‚¢‚é‚Ì‚©‚à‚µ‚ê‚Ü‚¹‚ñB‘½l”‚ÅŒÌˆÓ‚És‚Á‚Ä‚¢‚é‚Ì‚Å‚È‚¯‚ê‚ÎA’Ê‚è”²‚¯‚ðŽg—p‚µ‚Ä‚­‚¾‚³‚¢B\n" "Characters who aren't aware of you may sometimes block your way. Keep moving into them for five seconds and the game will let you pass through. This feature will let you pass through anyone, unless multiple players conspire to block your way.\n" "Es kann vorkommen, dass dir andere Charaktere unbeabsichtigt den Weg versperren. Wenn du ca. f…Ûnf Sekunden lang in sie hineinl…Ãufst, kommst du an ihnen vorbei. Durch diese Funktion wird sichergestellt, dass du niemals durch einen Charakter blockiert wirst; es sei denn, mehrere Spieler schlie…¾en sich zusammen, um dir den Weg zu versperren.\n" "D'autres personnages peuvent parfois vous bloquer le passage sans s'en rendre compte. D…Èplacez-vous vers eux pendant cinq secondes pour y rem…Èdier. Cette fonction vous permet de traverser quelqu'un, …¿ moins que plusieurs joueurs conspirent pour vous bloquer le passage.\n"
+    HELP ""
+    SLOT 1 "‘½l”‚ÅŒÌˆÓ‚És‚Á‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚Ü‚·BGM‚É‚æ‚é”»’f‚ð–]‚Ý‚Ü‚·B" "Multiple players are conspiring to block my way. I would like a GM to mediate." "Mehrere Spieler versperren mir absichtlich den Weg. Ich m…Õchte, dass mir ein GM in dieser Angelegenheit hilft." "Plusieurs joueurs conspirent pour me bloquer le passage. J'aimerais qu'un GM intervienne."
+  END NODE
+  DEF SELECTNODE 26
+    LABEL "[isáŠQ]”CˆÓ"
+    HEADER "GM‚ðŒÄ‚Ñó‹µ‚ð‰ü‘P‚·‚é‚±‚Æ‚ª‰Â”\‚©‚à‚µ‚ê‚Ü‚¹‚ñBGMƒR[ƒ‹‚³‚ê‚éÛ‚É‚ÍA‰½‚ª‹N‚±‚Á‚Ä‚¢‚é‚Ì‚©‚ð‹ï‘Ì“I‚É‹Lq‚µ‚Ä‚­‚¾‚³‚¢BƒR[ƒ‹‚Ì“à—e‚©‚çGM‚ª”»’f‚µA•K—v‚Å‚ ‚ê‚ÎÚ×‚ðŽf‚¢‚ÉŽQ‚è‚Ü‚·B\n" "Please describe what happened. A GM will read your description and contact you if more information is needed.\n" "Beschreibe bitte, was vorgefallen ist. Ein GM wird die Beschreibung lesen und sich mit dir in Verbindung setzen, falls weitere Informationen ben…Õtigt werden.\n" "Veuillez d…Ècrire ce qui s'est pass…È. Un GM prendra connaissance de cette description pour vous contacter, si n…Ècessaire.\n"
+    HELP ""
+    SLOT 1 "GMƒR[ƒ‹‚ð‚µ‚½‚¢‚Å‚·B" "I would like to call a GM." "Ich m…Õchte einen GM rufen." "J'aimerais appeler un GM."
+  END NODE
+  DEF SELECTNODE 27
+    LABEL "[‘€ì]‘€ì‚ª‚í‚©‚ç‚È‚¢ƒgƒbƒv"
+    HEADER "‹ï‘Ì“I‚ÈáŠQ‚Ì“à—e‚ð‹³‚¦‚Ä‚­‚¾‚³‚¢B\n" "Please describe the problem.\n" "Beschreibe bitte das Problem.\n" "Veuillez d…Ècrire le probl…Çme.\n"
+    HELP ""
+    SLOT 1 "ƒgƒŒ[ƒh‚ÌŽd•û‚ª•ª‚©‚è‚Ü‚¹‚ñB" "How do you trade items and money?" "Wie kann ich Items/Geld an einen Charakter …Ûbergeben?" "Comment …Èchanger des objets et de l'argent ?"
+    SLOT 2 "ƒNƒGƒXƒg‚Ìi‚ß•û‚ª•ª‚©‚è‚Ü‚¹‚ñB" "How do I complete this quest?" "Wie kann ich diesen Auftrag abschlie…¾en?" "Comment mener …¿ bien cette qu…Éte ?"
+    SLOT 3 "ƒLƒƒƒ‰ƒNƒ^[‚ªÀ‚èž‚ñ‚Å‚µ‚Ü‚¢‚Ü‚µ‚½B" "My character started kneeling." "Mein Charakter hat sich hingekniet." "Mon personnage s'agenouille."
+    DISP 3 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 11 "ƒLƒƒƒ‰ƒNƒ^[‚ªÀ‚èž‚ñ‚Å‚µ‚Ü‚¢‚Ü‚µ‚½B" "My character started kneeling." "Mein Charakter hat sich hingekniet." "Mon personnage s'agenouille."
+    DISP 11 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 4 "ƒLƒƒƒ‰ƒNƒ^[‚ª‘–‚ç‚È‚­‚È‚è‚Ü‚µ‚½B" "My character won't run anymore." "Mein Charakter kann nicht mehr rennen." "Mon personnage ne peut plus courir."
+    DISP 4 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 12 "ƒLƒƒƒ‰ƒNƒ^[‚ª‘–‚ç‚È‚­‚È‚è‚Ü‚µ‚½B" "My character won't run anymore." "Mein Charakter kann nicht mehr rennen." "Mon personnage ne peut plus courir."
+    DISP 12 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 5 "‰ï˜b‚ªTell‚âParty‚É‚È‚Á‚½‚Ü‚Ü’¼‚è‚Ü‚¹‚ñB" "My chat is stuck in Tell or Party mode." "Der Chat steckt im Modus …DTell…S, bzw. …DParty…S fest." "Mon chat est bloqu…È en mode dire (Say) ou …Èquipe (Party)."
+    DISP 5 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 16 "‰ï˜b‚ªTell‚âParty‚É‚È‚Á‚½‚Ü‚Ü’¼‚è‚Ü‚¹‚ñB" "My chat is stuck in Tell or Party mode" "Der Chat steckt im Modus …DTell…S, bzw. …DParty…S fest." "Mon chat est bloqu…È en mode dire (Say) ou …Èquipe (Party)."
+    DISP 16 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 6 "ƒp[ƒeƒB‚Ì‘g‚Ý•û‚ª•ª‚©‚è‚Ü‚¹‚ñB" "How do I form a party?" "Wie kann ich eine Gruppe bilden?" "Comment former une …Èquipe ?"
+    SLOT 7 "ƒ‚ƒ“ƒXƒ^[‚ðUŒ‚‚Å‚«‚Ü‚¹‚ñB" "How do I attack a monster?" "Wie kann ich ein Monster angreifen?" "Comment attaquer un monstre ?"
+    DISP 7 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 13 "ƒ‚ƒ“ƒXƒ^[‚ðUŒ‚‚Å‚«‚Ü‚¹‚ñB" "How do I attack a monster?" "Wie kann ich ein Monster angreifen?" "Comment attaquer un monstre ?"
+    DISP 13 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 8 "ƒAƒCƒeƒ€‚ð®—‚µ‚½‚¢‚Å‚·B" "How do I sort my items?" "Wie kann ich meine Items sortieren?" "Comment trier mes objets ?"
+    DISP 8 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 15 "ƒAƒCƒeƒ€‚ð®—‚µ‚½‚¢‚Å‚·B" "How do I sort my items?" "Wie kann ich meine Items sortieren?" "Comment trier mes objets ?"
+    DISP 15 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 9 "“ü—Í‚µ‚½•¶Žš‚Ìˆê•”‚ªuHHHv‚É•Ï‰»‚µ‚Ü‚·B" "Why does my text come out as \"????\"" "Warum wird statt des eingegebenen Textes nur \…D????\…S ausgegeben?" "Pourquoi mon texte se pr…Èsente-t-il comme suit : \"????\""
+    SLOT 14 "ƒJƒƒ‰‚ª‰ñ‚è‚Ü‚¹‚ñB" "The view angle won't rotate." "Der Blickwinkel l…Ãsst sich nicht ver…Ãndern." "Impossible de faire pivoter l'angle de vue."
+    DISP 14 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 10 "‚»‚Ì‘¼" "My problem isn't listed here." "Ich habe ein Problem, das hier nicht aufgef…Ûhrt ist." "Mon probl…Çme n'est pas r…Èpertori…È ici."
+  END NODE
+  DEF SELECTNODE 28
+    LABEL "[‘€ì]ƒgƒŒ[ƒh"
+    HEADER "‚Ü‚¸‚ÍƒgƒŒ[ƒh‚ðs‚¢‚½‚¢‘ŠŽè‚ðƒ^[ƒQƒbƒg‚µ‚ÄAƒƒCƒ“ƒƒjƒ…[‚©‚çuƒgƒŒ[ƒhv‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B‘ŠŽè‚É‚ÍƒgƒŒ[ƒh‚ðŠó–]‚µ‚Ä‚¢‚é‚Æ‚¢‚¤ƒƒbƒZ[ƒW‚ªo‚Ü‚·‚Ì‚ÅA‘ŠŽè‚àƒƒCƒ“ƒƒjƒ…[‚©‚çuƒgƒŒ[ƒhv‚ð‘I‘ð‚·‚é‚±‚Æ‚ÅƒgƒŒ[ƒh‰æ–Ê‚ªŒ»‚ê‚Ü‚·B\nŒˆ’èŒã‚ÉƒgƒŒ[ƒh‚ªs‚¦‚È‚¢ê‡‚ÍA‘ŠŽè‚ÌƒAƒCƒeƒ€ŠŽ”‚ª‚¢‚Á‚Ï‚¢‚Å‚È‚¢‚©‚ðŠm”F‚µ‚Ü‚µ‚å‚¤B" "First, target another character, open your main menu, and select \"Trade.\"  Your target will receive notice that you wish to trade, and can begin the transaction by selecting \"Trade\" from his own main menu. If your transaction does not execute, make sure that the recipient has room in his inventory." "W…Ãhle zun…Ãchst einen anderen Charakter als Ziel aus, …Õffne dann das Hauptmen…Û und w…Ãhle die Option \…DHandeln\…S aus. Das aktuelle Ziel wird dar…Ûber informiert, dass du mit ihm handeln m…Õchtest und kann die Transaktion einleiten, indem es ebenfalls die Option \…DHandeln\…S ausw…Ãhlt. Wenn die Transaktion fehlschl…Ãgt, solltest du den Empf…Ãnger fragen, ob er …Ûber ausreichend Platz im Inventar verf…Ûgt." "Tout d'abord, ciblez un autre personnage, ouvrez votre menu principal et s…Èlectionnez \"Echanger\". Votre cible en est inform…Èe et peut commencer la transaction en s…Èlectionnant \"Echanger\" depuis son menu principal. A d…Èfaut de transaction, v…Èrifiez que l'inventaire du destinataire n'est pas plein."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 29
+    LABEL "[‘€ì]ƒNƒGƒXƒg"
+    HEADER "‚Ü‚¸‚ÍƒƒCƒ“ƒƒjƒ…[‚Ì2ƒy[ƒW–Ú‚ÌuƒNƒGƒXƒgv‚ÅƒNƒGƒXƒg‚Ì“à—e‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B‘ŠŽè‚Ì•K—v‚Æ‚·‚é‚à‚Ì‚ð“n‚·ƒNƒGƒXƒg‚Ìê‡A‚»‚Ìƒmƒ“ƒvƒŒƒCƒ„[ƒLƒƒƒ‰ƒNƒ^[iNPCj‚ðƒ^[ƒQƒbƒg‚µ‚ÄƒƒCƒ“ƒƒjƒ…[‚æ‚èuƒgƒŒ[ƒhv‚ð‘I‚Ô‚±‚Æ‚ÅƒgƒŒ[ƒhƒEƒBƒ“ƒhƒE‚ªŠJ‚«‚Ü‚·‚Ì‚ÅA“n‚µ‚½‚¢ƒAƒCƒeƒ€‚ð‘I‚ñ‚¾Œã‚ÉŒˆ’è‚µ‚Ä‚­‚¾‚³‚¢B\n\n‚»‚Ì‘¼‹ï‘Ì“I‚ÈAu‚±‚ÌƒNƒGƒXƒg‚Í‚Ç‚¤‚·‚ê‚ÎƒNƒŠƒA‚Å‚«‚é‚Ì‚©v‚Æ‚¢‚¤‚±‚Æ‚ÉŠÖ‚µ‚Ä‚ÍƒQ[ƒ€‚Ì«Šiã‚¨“š‚¦‚Å‚«‚Ü‚¹‚ñ‚Ì‚Å‚²—¹³‚­‚¾‚³‚¢B" "First, check the quest summary from the \"Quest\" button found on the second page of the main menu. If your quest requires you to hand an item to a non-player character (NPC), target the NPC and select \"Trade\" from the main menu. The trade window will appear. Choose the item you wish to hand over, and select \"OK.\"\n\nThe Help Desk cannot answer specific questions regarding quests." "Pr…Ûfe zun…Ãchst die Auftragsbeschreibung unter der Option \…DAuftrag\…S auf der zweiten Seite des Hauptmen…Ûs. Wenn es der Auftrag erfordert, einem Nichtspieler-Charakter (NPC) ein Item zu geben, dann w…Ãhle den entsprechenden NPC als Ziel aus und rufe im Hauptmen…Û die Option \…DHandeln\…S auf. Daraufhin wird das Handelsfenster angezeigt. Markiere das zu …Ûbergebende Item und w…Ãhle \…DOK.\…S aus.\n\nDie Hilfe erteilt keine spezifischen Ausk…Ûnfte zu Auftr…Ãgen." "Tout d'abord, consultez le r…Èsum…È de la qu…Éte …¿ partir du bouton \"Qu…Étes\" situ…È sur la deuxi…Çme page du menu principal. Si cette qu…Éte implique que vous remettiez un objet …¿ un personnage non-joueur (PNJ), ciblez ce personnage et s…Èlectionnez l'option \"Echanger\" du menu principal. La fen…Étre d'…Èchange s'affiche. Choisissez l'objet que vous souhaitez remettre et s…Èlectionnez \"OK\"\n\n. L'aide ne r…Èpond pas aux questions sp…Ècifiques li…Èes aux qu…Étes."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 30
+    LABEL "[‘€ì]‰ñ•œFPS2"
+    HEADER "“Á‚ÉƒƒbƒZ[ƒW‚à‚È‚­ƒLƒƒƒ‰ƒNƒ^[‚ªÀ‚èž‚ñ‚Å‚µ‚Ü‚Á‚½ê‡‚ÍA‚»‚ê‚Íƒq[ƒŠƒ“ƒOó‘Ô‚É‚ ‚é‚±‚Æ‚ðˆÓ–¡‚µ‚Ä‚¢‚Ü‚·BƒRƒ“ƒgƒ[ƒ‰‚ÌL3ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚©AUSB‘Î‰žƒL[ƒ{[ƒh‚Ìƒeƒ“ƒL[–‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B\n\nƒJƒEƒ“ƒgƒ_ƒEƒ“‚ªs‚í‚ê‚Ä‚¢‚éê‡‚ÍA‚»‚ê‚ÍuƒƒOƒAƒEƒgv‚à‚µ‚­‚ÍuPlayOnlinev‚ªƒƒCƒ“ƒƒjƒ…[‚æ‚è‘I‘ð‚³‚ê‚½‚©‚ç‚Å‚·BÄ“x“¯‚¶ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚±‚Æ‚ÅƒLƒƒƒ“ƒZƒ‹‚ª‰Â”\‚Å‚·B" "Sitting down or kneeling means that your character is in healing mode. To stand up again, press the L3 button, the * key on your keyboard, or simply move in any direction.\n\nIf you see countdown messages while kneeling, it means you have selected \"Logout\" or \"PlayOnline\" from the main menu. Press any key mentioned above to cancel the logout process." "Ein sitzender, bzw. kniender Charakter befindet sich im Heilmodus. Um wieder aufzustehen, kannst du entweder die L3-Taste, bzw. die \…D*\…S-Taste auf der Tastatur dr…Ûcken oder den Charakter in eine beliebige Richtung bewegen.\n\nWenn ein Countdown angezeigt wird, w…Ãhrend der Charakter kniet, dann hast du den Befehl \…DLogout\…S oder \…DPlayOnline\…S aus dem Hauptmen…Û ausgew…Ãhlt. Dr…Ûcke eine beliebige der oben genannten Tasten, um den Logout-Vorgang abzubrechen." "Lorsque votre personnage est assis ou agenouill…È, il est en mode de r…Ècup…Èration. Pour qu'il se rel…Çve, appuyez sur le bouton L3, la touche * de votre clavier ou d…Èplacez-le dans une autre direction.\n\nSi des messages de compte …¿ rebours s'affichent alors que votre personnage est agenouill…È, cela signifie que vous avez s…Èlectionn…È \"D…Èconnexion\" ou \"PlayOnline\" dans le menu principal. Appuyez sur une des touches mentionn…Èes ci-dessus pour annuler le processus de d…Èconnexion."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 31
+    LABEL "[‘€ì]•à‚­[PS2]"
+    HEADER "u•à‚­^‘–‚év‚ÌØ‚è‘Ö‚¦‚ðs‚Á‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\n\nUSB‘Î‰žƒL[ƒ{[ƒh‚Ìƒeƒ“ƒL[ã•”‚É‚ ‚éu/v‚ð‰Ÿ‚·‚±‚Æ‚É‚æ‚èØ‚è‘Ö‚¦‚ª‰Â”\‚Å‚·BƒAƒiƒƒOƒRƒ“ƒgƒ[ƒ‰iDUALSHOCK_2j‚Ì‚Ý‚²Žg—p‚Ì•û‚ÍA¶ƒXƒeƒBƒbƒN‚ðŒX‚¯‚½‚Ü‚Ü \"PlayStation_2\" ‚Ì“dŒ¹‚ð“ü‚ê‚½‚±‚Æ‚É‚æ‚èÇó‚ª”­¶‚µ‚½‰Â”\«‚ª‚ ‚è‚Ü‚·BƒRƒ“ƒgƒ[ƒ‰‚Ì”²‚«·‚µA–”‚Í \"PlayStation_2\" ‚ÌÄ‹N“®‚ð‚¨ŽŽ‚µ‚­‚¾‚³‚¢B" "You may have switched between walk mode and run mode. Press the \"/\" key on your keyboard's number pad to toggle between them. If you are using an analog controller (DUALSHOCK(R)2), this may be caused by turning on the PlayStation(R)2 while pressing the L3 button. Try removing and then reinserting the controller, or resetting your console." "M…Õglicherweise hast du den Modus \…DGehen\…S eingestellt. Mit der Taste \…D/\…S des numerischen Ziffernblocks der Tastatur kannst du zwischen den Modi \…DGehen\…S und \…DLaufen\…S wechseln. Wenn du einen Analog Controller (DUALSHOCK(R)2) verwendest, ist der Modus eventuell beim Einschalten der PlayStation(R)2 gewechselt worden, weil die L3-Taste gedr…Ûckt wurde. Versuche das Problem zu beheben, indem du den Controller von der Konsole trennst und dann wieder verbindest, oder …Ãndere die Einstellung …Ûber die Konsole." "Vous …Étes peut-…Étre pass…È du mode marche au mode course. Appuyez sur la touche \"/\" de votre clavier num…Èrique pour passer d'un mode …¿ l'autre. Si vous utilisez une manette analogique (DUALSHOCK(R)2), cela peut se produire lorsque vous allumez la PlayStation(R)2 tout en appuyant sur le bouton L3. Essayez de d…Èbrancher, puis de rebrancher la manette ou r…Èinitialisez votre console."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 32
+    LABEL "[‘€ì]‰ï˜bŒÅ’èFPS2"
+    HEADER "u/tellvu/partyvó‘Ô‚ÉŒÅ’è‚³‚ê‚Ä‚¢‚Ü‚·B•ÏX‚·‚éê‡‚É‚ÍŽ©•ª‚ðƒ^[ƒQƒbƒg‚µ‚ÄŒˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚µAƒAƒNƒVƒ‡ƒ“ƒRƒ}ƒ“ƒhƒEƒBƒ“ƒhƒE‚Ìuƒ`ƒƒƒbƒgv€–Ú‚©‚ç•ûŒüƒL[‚Ì‰E‚ð‰Ÿ‚·‚±‚Æ‚É‚æ‚èA“KØ‚È‰ï˜bƒ‚[ƒh‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B\n" "Your chat mode is currently locked to /tell or /party. To switch to a different mode, target yourself and press the confirm button. After selecting \"Chat\" from the Action Command Window, press the right directional button to change your settings.\n" "Dein Chat ist momentan im Modus /tell oder /party eingerastet. Um den Modus zu …Ãndern, musst du dich selbst als Ziel ausw…Ãhlen und die Best…Ãtigungstaste dr…Ûcken. Dr…Ûcke nach Auswahl von \…DChat\…S im Aktionsbefehlsfenster die rechte Richtungstaste, um die Einstellung zu …Ãndern.\n" "Votre mode de chat est actuellement verrouill…È sur /tell ou /party. Pour passer …¿ un autre mode, ciblez-vous et appuyez sur le bouton Confirmer. Apr…Çs avoir s…Èlectionn…È \"Chat\" dans la fen…Étre de commande d'action, appuyez sur le bouton directionnel droit pour modifier vos param…Çtres.\n"
+    HELP ""
+  END NODE
+  DEF SELECTNODE 33
+    LABEL "[‘€ì]ƒp[ƒeƒB"
+    HEADER "ƒp[ƒeƒB‚É—U‚Á‚Ä‚Ù‚µ‚¢ê‡‚É‚ÍAƒƒCƒ“ƒƒjƒ…[‚Åuƒp[ƒeƒB•Ò¬v‚ð‘I‘ð‚µA‚³‚ç‚Éuƒp[ƒeƒBŽQ‰ÁŠó–]v‚ð‘I‘ð‚µ‚Ü‚·B‚·‚é‚Æƒp[ƒeƒBŽQ‰ÁŠó–]‚Ì—ÎF‚ÌŠÛ‚Ìƒ}[ƒN‚ª•\Ž¦‚³‚ê‚Ü‚·B\nƒp[ƒeƒB‚É—U‚¤‘¤‚ÍAŽQ‰ÁŠó–]ƒ}[ƒN‚ª•\Ž¦‚³‚ê‚Ä‚¢‚éƒvƒŒƒCƒ„[ƒLƒƒƒ‰ƒNƒ^[iPCj‚Éƒ^[ƒQƒbƒg‚ð‡‚í‚¹Œˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚µAuƒp[ƒeƒB‚É—U‚¤v‚ð‘I‘ð‚·‚é‚±‚Æ‚Åƒp[ƒeƒB‚É—U‚¤‚±‚Æ‚ª‰Â”\‚Å‚·B\n\n‘ŠŽè‘¤‚É‚àƒp[ƒeƒB‰Á“ü‚ÌˆÓŽv‚ð•·‚©‚ê‚é‚Ì‚ÅA‚»‚ê‚É‘Î‚µ‘ŠŽè‚ªuƒp[ƒeƒB‚É“ü‚év‚ð‘I‘ð‚·‚ê‚Îƒp[ƒeƒB‚Ì‰Á“ü‚ªŠ®—¹‚µ‚Ü‚·B" "To join a party, select \"Party\" from the main menu. Next, select \"Seek Party\" from the sub-menu. A green exclamation mark will appear before your name, indicating that you are seeking a party.\nTo invite someone into your party, target a PC displaying the Seek Party flag, and press the confirm button. Once you select \"Invite,\" your target receives an invitation to join. If he presses \"Accept,\" the PC becomes a member of your party." "Wenn du einer Gruppe beitreten m…Õchtest, w…Ãhle im Hauptmen…Û die Option \…DGruppe\…S aus. W…Ãhle anschlie…¾end aus dem Untermen…Û die Option \…DSuche Gruppe\…S. Daraufhin wird neben deinem Charakternamen ein gr…Ûnes Ausrufungszeichen angezeigt, was anderen Spielern signalisiert, dass du eine Gruppe suchst.\nWenn du jemanden in deine Gruppe einladen m…Õchtest, dann w…Ãhle den PC mit aktiver Markierung \…DSuche Gruppe\…S aus und dr…Ûcke die Best…Ãtigungstaste. Sobald du die Option \…DEinladen\…S ausw…Ãhlst, erh…Ãlt der entsprechende Spieler eine Einladung, sich der Gruppe anzuschlie…¾en. Wenn der Spieler \…DAkzeptieren\…S ausw…Ãhlt, wird sein PC in deine Gruppe aufgenommen." "Pour rejoindre une …Èquipe, s…Èlectionnez l'option\"Equipe\" du menu principal. S…Èlectionnez ensuite l'option \"Chercher …Èquipe\" du sous-menu. Un point d'exclamation vert appara…Ít pr…Çs de votre nom.\nPour inviter quelqu'un, ciblez un PJ affichant un drapeau Chercher …Èquipe et appuyez sur le bouton Confirmer. Lorsque vous s…Èlectionnez \"Inviter\", votre cible re…Æoit votre invitation. S'il appuie sur \"Accepter\", ce PJ rejoint votre …Èquipe."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 34
+    LABEL "[‘€ì]UŒ‚•s‰Â[PS2]"
+    HEADER "ƒ‚ƒ“ƒXƒ^[‚Ì–¼‘O‚ÌF‚ªƒsƒ“ƒNF‚É‚È‚Á‚Ä‚¢‚éê‡‚ÍA‘¼‚ÌƒvƒŒƒCƒ„[‚Ü‚½‚Íƒp[ƒeƒB‚ªŠù‚É‚»‚Ìƒ‚ƒ“ƒXƒ^[‚Æí‚Á‚Ä‚¢‚éó‘Ô‚Å‚·‚Ì‚ÅUŒ‚‚Å‚«‚Ü‚¹‚ñB\n–¼‘O‚ª”’F‚Ìƒ‚ƒ“ƒXƒ^[‚ÍAƒ^[ƒQƒbƒg‚µ‚ÄŒˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚µAƒAƒNƒVƒ‡ƒ“ƒRƒ}ƒ“ƒhƒEƒBƒ“ƒhƒE‚ÌuUŒ‚v‚ð‘I‘ð‚·‚é‚©AUSB‘Î‰žƒL[ƒ{[ƒh‚ÌCtrl‚à‚µ‚­‚ÍAlt‚ð‰Ÿ‚µ‚È‚ª‚çAƒL[‚ð‰Ÿ‚·‚±‚Æ‚ÅUŒ‚‚ªs‚¦‚Ü‚·B\n‹H‚ÉŽ©•ª‚¾‚¯‚ªŒ©‚¦‚Ä‘S‚­ˆÚ“®‚µ‚È‚¢AUŒ‚‚à‚Å‚«‚È‚¢‚Æ‚¢‚¤ƒ‚ƒ“ƒXƒ^[‚ª‚¢‚Ü‚·B‚±‚ê‚Í‚Ù‚Æ‚ñ‚Ç‚Ìê‡Žc‘œ‚Å‚·‚Ì‚ÅAˆê“xƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‚É–ß‚èÄ“xƒQ[ƒ€‚É–ß‚é‚±‚Æ‚ÅÁ‚·‚±‚Æ‚ª‰Â”\‚Å‚·B" "If your target's name is white, you can attack it by targeting it and pressing confirm. The action command window will then appear; select \"Attack\" or press Ctrl+A (Alt+A) to begin auto-attack. If your target's name is pink, then it has already been attacked by another player or party. You cannot attack such monsters. If you find a monster that does not move, attack, or appear to other players, it is merely an afterimage. This can be remedied by returning to PlayOnline and logging back in." "Wenn der Name des Ziels wei…¾ angezeigt wird, kannst du es angreifen, indem du die Best…Ãtigungstaste dr…Ûckst. Daraufhin wird das Aktionsbefehlsfenster aufgerufen. W…Ãhle \…DAttacke\…S oder dr…Ûcke Strg+A (Alt+A), um das Ziel automatisch anzugreifen. Wenn der Name des Ziels lila angezeigt wird, befindet sich das Ziel bereits mit einem anderen Spieler oder einer anderen Gruppe im Kampf. Solche Monster kannst du nicht angreifen. Wenn sich ein Monster weder bewegt, angreift noch von anderen Spielern gesehen werden kann, handelt es sich um einen optischen Fehleffekt. Diesen kannst du beheben, indem du zu PlayOnline zur…Ûckkehrst und dich danach wieder anmeldest." "Si le nom de votre cible appara…Ít en blanc, vous pouvez l'attaquer en le ciblant et en appuyant sur le bouton Confirmer. La fen…Étre d'action s'affiche alors ; s…Èlectionnez \"Attaquer\" ou appuyez sur Ctrl+A (Alt+A) pour lancer l'attaque automatique. Si le nom de votre cible appara…Ít en rose, cela signifie qu'elle est d…Èj…¿ attaqu…Èe par un autre personnage ou une autre …Èquipe. Vous ne pouvez pas attaquer de tels monstres. Si vous rencontrez un monstre qui ne bouge pas, attaque ou appara…Ít devant d'autres joueurs, il s'agit probablement d'une image r…Èmanente. Pour y rem…Èdier, retournez …¿ PlayOnline et reconnectez-vous."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 35
+    LABEL "[‘€ì]ƒAƒCƒeƒ€®—[PS2]"
+    HEADER "ƒƒCƒ“ƒƒjƒ…[“à‚ÌuƒAƒCƒeƒ€v‚ð‘I‘ð‚·‚é‚ÆuƒŠƒXƒgƒIƒvƒVƒ‡ƒ“v‚Æ‚¢‚¤€–Ú‚ª•\Ž¦‚³‚ê‚Ü‚·BƒRƒ“ƒgƒ[ƒ‰‚Ì¢ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚Æƒƒjƒ…[‚ª‘I‘ð‰Â”\‚É‚È‚è‚Ü‚·‚Ì‚ÅAu‚¹‚¢‚Æ‚ñv‚ð‘I‘ð‚µ‚Ü‚·B‚·‚é‚ÆƒJƒeƒSƒŠ[•Ê‚É•À‚Ñ‘Ö‚¦‚ªs‚í‚êAƒAƒCƒeƒ€–¼‚Ì‰E‘¤‚É”Žš‚ª•\Ž¦‚³‚ê‚éƒAƒCƒeƒ€‚Ìê‡‚ÍŽ©“®“I‚É“¯–¼‚ÌƒAƒCƒeƒ€‚ð‚Ü‚Æ‚ß‚ç‚ê‚Ü‚·B" "After selecting \"Items\" from the main menu, a sub-menu entitled \"Options\" will appear. Press the ¢ button to access this menu. Selecting \"Auto\" from this menu automatically sorts your items by type. Stackable items of the same type will automatically stack." "Nach Auswahl der Option \…DItems\…S aus dem Hauptmen…Û wird ein Untermen…Û namens \…DOptionen\…S aufgerufen. Dr…Ûcke die ¢-Taste, um auf dieses Men…Û zuzugreifen. W…Ãhle aus diesem Men…Û \…DAuto\…S aus, um deine Items automatisch nach Typ zu sortieren. Dadurch werden au…¾erdem stapelbare Items automatisch gestapelt." "Apr…Çs avoir s…Èlectionn…È l'option \"Objets\" du menu principal, un sous-menu intitul…È \"Options\" s'affiche. Appuyez sur la touche Y de la manette ou + du clavier pour y acc…Èder. S…Èlectionnez l'option \"Auto\" de ce menu pour trier automatiquement vos objets par type. Les objets empilables du m…Éme type sont automatiquement empil…Ès."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 36
+    LABEL "[‘€ì]‰ï˜bƒtƒBƒ‹ƒ^"
+    HEADER "Œö˜—Ç‘­ãD‚Ü‚µ‚­‚È‚¢‚ÆŽv‚í‚ê‚é‚¢‚­‚Â‚©‚ÌŒ¾—t‚ª“ü—Í‚³‚ê‚Ä‚¢‚é‹°‚ê‚ª‚ ‚è‚Ü‚·Bƒtƒ@ƒCƒiƒ‹ƒtƒ@ƒ“ƒ^ƒW[XI‚Å‚ÍAŒö˜—Ç‘­ãD‚Ü‚µ‚­‚È‚¢‚ÆŽv‚í‚ê‚é‚¢‚­‚Â‚©‚ÌŒ¾—t‚ðƒ`ƒƒƒbƒgƒEƒBƒ“ƒhƒE‚É“ü—Í‚·‚é‚Æ‚»‚Ì•”•ª‚ªuHHHHv‚ÆŽ©“®“I‚É•ÏŠ·‚³‚ê•\Ž¦‚³‚ê‚Ü‚·B—á‚¦‚»‚ê‚ª’PŒê‚Ìˆê•”‚Å‚ ‚Á‚½‚Æ‚µ‚Ä‚àA”­Œ¾‚Æ‚µ‚ÄŒ©‚¦‚é•”•ª‚É‚Íƒ}ƒXƒN‚ª‚©‚©‚è‚Ü‚·B\n" "It was probably an obscenity. FINAL FANTASY XI automatically filters explicit words from the chat window and replaces them with \"????\"\n" "Vermutlich hat es sich dabei um ein Schimpfwort gehandelt. FINAL FANTASY XI verf…Ûgt …Ûber einen Schimpfwortfilter, der beleidigende W…Õrter automatisch aus dem Chat-Fenster entfernt und durch \…D????\…S ersetzt.\n" "Il s'agissait certainement d'une obsc…Ènit…È. FINAL FANTASY XI filtre automatiquement les mots douteux de la fen…Étre de chat et les remplace par \"????\"\n"
+    HELP ""
+  END NODE
+  DEF SELECTNODE 37
+    LABEL "[‘€ì]‚»‚Ì‘¼"
+    HEADER "Žc”O‚È‚ª‚çGM‚Íˆê”Ê“I‚ÈŽ¿–â‚ÉŠÖ‚µ‚Ä‚Í‚¨Žó‚¯‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB‚»‚ê‚ÍGM‚Å‚È‚¯‚ê‚Î‘Îˆ‚Å‚«‚È‚¢ó‹µ‰º‚É‚ ‚éƒvƒŒƒCƒ„[‚ÌŒ³‚Ö‚¢‚¿‘‚­‹ì‚¯‚Â‚¯‚é•K—v‚ª‚ ‚é‚©‚ç‚Å‚·B\n‹M•û‚ª¡‚¨”Y‚Ý‚Ì‚±‚Æ‚ÍAƒxƒeƒ‰ƒ“‚ªˆÈ‘O‚É”Y‚ñ‚¾‚±‚Æ‚Æ“¯‚¶‚©‚à‚µ‚ê‚Ü‚¹‚ñBÏ‹É“I‚É‘¼‚ÌƒvƒŒƒCƒ„[‚É˜b‚µŠ|‚¯‚Ä‚Ý‚Ä‚­‚¾‚³‚¢B\n\n‚Ü‚½AƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“ƒƒCƒ“ƒƒjƒ…[ã‚ÌuƒT[ƒrƒX•ƒTƒ|[ƒgv‚ð‚²——‚É‚È‚Á‚Ä‚Ý‚Ä‚­‚¾‚³‚¢B" "GMs are unable to answer general questions about the game. Try asking other players for hints.\n\nYou can also check the \"Service & Support\" screen accessed from the PlayOnline main menu." "Es ist nicht die Aufgabe von GMs, allgemeine Fragen zum Spiel zu beantworten. Frage am besten bei anderen Spielern nach Rat.\n\nZus…Ãtzliche Tipps findest du au…¾erdem im \…DService & Support\…S-Fenster, das du …Ûber das PlayOnline-Hauptmen…Û aufrufen kannst." "Les GM ne peuvent r…Èpondre aux questions d'ordre g…Èn…Èral sur le jeu. Demandez des astuces aux autres joueurs.\n\nVous pouvez …Ègalement consulter l'…Ècran \"Service & Assistance\" accessible depuis le menu principal de PlayOnline."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 38
+    LABEL "[‹@Ší]ƒgƒbƒv"
+    HEADER "\‚µ–ó‚ ‚è‚Ü‚¹‚ñ‚ªAƒtƒ@ƒCƒiƒ‹ƒtƒ@ƒ“ƒ^ƒW[XI“àƒTƒ|[ƒgƒfƒXƒN‚É‚¨‚¢‚Ä‚Í‹Zp“I‚È‚²Ž¿–â‚Í‚¨Žó‚¯‚¢‚½‚µ‚©‚Ë‚Ü‚·BƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“ƒƒCƒ“ƒƒjƒ…[ã‚ÌuƒT[ƒrƒX•ƒTƒ|[ƒgv‚ð‚²ŽQÆ‚­‚¾‚³‚¢B\n‚È‚¨ˆÈ‰º‚Ì‚²Ž¿–â‚ÉŠÖ‚µ‚Ü‚µ‚Ä‚ÍAŒÌá‚Å‚Í‚È‚¢‚©‚à‚µ‚­‚ÍˆêŽž“I‚È‘Îˆ–@‚ª‚ ‚éê‡‚ª‚²‚´‚¢‚Ü‚·‚Ì‚ÅA‘I‘ð‚µ‘Îˆ–@‚ð‚²——‚­‚¾‚³‚¢B\n" "Unfortunately, the FINAL FANTASY XI Help Desk cannot answer technical questions. Please refer to \"Service & Support\" from the PlayOnline main menu.  Of course, the following topics may not be hardware-related and are easily solved.\n" "Leider werden in der FINAL FANTASY XI-Hilfe keine technischen Fragen beantwortet. Ziehe bitte den \…DService & Support\…S-Bereich zu Rate, den du …Ûber das PlayOnline-Hauptmen…Û aufrufen kannst. Bei den folgenden Themen handelt es sich m…Õglicherweise um kein Hardware-Problem. In diesem Fall sollte das Problem leicht zu l…Õsen sein.\n" "Malheureusement, l'aide de FINAL FANTASY XI ne peut r…Èpondre aux questions techniques. Reportez-vous …¿ la rubrique \"Service & Assistance\" du menu principal PlayOnline. Bien s…Úr, les rubriques suivantes n'ont pas trait au mat…Èriel et les probl…Çmes qui y sont consign…Ès peuvent …Étre facilement r…Èsolus.\n"
+    HELP ""
+    SLOT 1 "‰p•¶Žš‚ª‘å•¶Žš‚É‚È‚Á‚½‚Ü‚Ü–ß‚è‚Ü‚¹‚ñB" "I can't type lowercase letters." "Ich kann keine Kleinbuchstaben schreiben." "Je n'arrive pas …¿ entrer de minuscules."
+    DISP 1 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 7 "‰p•¶Žš‚ª‘å•¶Žš‚É‚È‚Á‚½‚Ü‚Ü–ß‚è‚Ü‚¹‚ñB" "I can't type lowercase letters." "Ich kann keine Kleinbuchstaben schreiben." "Je n'arrive pas …¿ entrer de minuscules."
+    DISP 7 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 2 "¡‚Ü‚ÅŽg—p‚µ‚Ä‚¢‚½USB‘Î‰žƒL[ƒ{[ƒh‚ªŽg‚¦‚È‚­‚È‚é‚±‚Æ‚ª‚ ‚è‚Ü‚·B" "My USB keyboard is not responding." "Meine USB-Tastatur reagiert nicht." "Mon clavier USB ne r…Èpond pas."
+    DISP 2 "GENERIC.PLATFORM" "S:eq" "ps2"
+    SLOT 6 "¡‚Ü‚ÅŽg—p‚µ‚Ä‚¢‚½ƒL[ƒ{[ƒh‚ªŽg‚¦‚È‚­‚È‚é‚±‚Æ‚ª‚ ‚è‚Ü‚·B" "My keyboard is not responding." "Meine Tastatur reagiert nicht." "Mon clavier ne r…Èpond pas."
+    DISP 6 "GENERIC.PLATFORM" "S:eq" "win"
+    SLOT 3 "’ÊM‚ª“rØ‚ê‚Ü‚·B" "I have a problem connecting." "Es gelingt mir nicht, eine Verbindung herzustellen." "J'ai un probl…Çme de connexion."
+    SLOT 4 "•¶Žš“ü—Í‚ª’x‚­‚È‚è‚Ü‚µ‚½B" "Text input is slower than usual." "Die Texteingabe ist langsamer als gew…Õhnlich." "L'entr…Èe de texte est anormalement lente."
+    SLOT 5 "ƒRƒ“ƒgƒ[ƒ‰‚Å‘€ì‚ªo—ˆ‚Ü‚¹‚ñB" "My controller is not responding." "Mein Controller reagiert nicht." "Ma manette ne r…Èpond pas."
+    DISP 5 "GENERIC.PLATFORM" "S:eq" "none"
+  END NODE
+  DEF SELECTNODE 39
+    LABEL "[‹@Ší]‘å•¶ŽšFPS2"
+    HEADER "USB‘Î‰ž“ú–{ŒêƒL[ƒ{[ƒh‚Ìê‡‚ÍAShift‚ð‰Ÿ‚µ‚È‚ª‚çCaps Lock‚ð‰Ÿ‚·‚±‚Æ‚Å‘å•¶Žš‚ª•W€ó‘Ô‚É‚È‚è‚Ü‚·B" "Press the Caps Lock key to type lowercase letters." "Dr…Ûcke die Feststelltaste (Caps Lock), um Kleinbuchstaben zu schreiben." "Appuyez sur la touche Verr Maj pour entrer des minuscules."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 40
+    LABEL "[‹@Ší]ƒL[ƒ{[ƒh•s’²[PS2]"
+    HEADER "ˆê“xUSB‘Î‰žƒL[ƒ{[ƒh‚ð \"PlayStation_2\" –{‘Ì‚©‚ç”²‚«AÄ“x·‚µž‚ñ‚Å‚Ý‚Ä‚­‚¾‚³‚¢B‚»‚ê‚Å’¼‚ç‚È‚¯‚ê‚ÎƒL[ƒ{[ƒh‚ÌŒÌá‚ª‹^‚í‚ê‚Ü‚·B" "Try disconnecting and reconnecting the keyboard. If this does not solve the problem, there may be a problem with your keyboard." "Trenne die Tastatur und schlie…¾e sie wieder an. Wenn sich das Problem dadurch nicht beheben l…Ãsst, ist deine Tastatur eventuell defekt." "D…Èbranchez, puis rebranchez le clavier. Si le probl…Çme persiste, il est peut …Étre li…È …¿ votre clavier."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 41
+    LABEL "[‹@Ší]’ÊMØ‚ê"
+    HEADER "‚²Œ_–ñ‚ÌƒCƒ“ƒ^[ƒlƒbƒgƒT[ƒrƒXƒvƒƒoƒCƒ_[‚É‚ÄÚ‘±áŠQ‚âƒƒ“ƒeƒiƒ“ƒX‚ªs‚í‚ê‚Ä‚¢‚Ü‚¹‚ñ‚©HƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‚Ìƒƒ“ƒeƒiƒ“ƒX‚âáŠQî•ñ‚ÍAŒ»Ýis‚µ‚Ä‚¢‚é‚à‚Ì‚àŠÜ‚ß‚ÄƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“ã‚Ìƒjƒ…[ƒX‚âAhttp://www.playonline.com/ ‚ÉŒfÚ‚³‚ê‚Ü‚·B\n" "There may be a problem with your ISP, or your ISP may be performing maintenance. Check http://www.playonline.com/ for PlayOnline's update and scheduled maintenance information.\n" "Entweder besteht ein Problem mit deinem ISP oder dein ISP f…Ûhrt derzeit Wartungsarbeiten durch. Unter http://www.playonline.com/ erh…Ãltst du Informationen …Ûber geplante und aktuelle Wartungsarbeiten an PlayOnline.\n" "Il peut s'agir d'un probl…Çme li…È …¿ votre fournisseur de services Internet, …¿ moins que ce dernier effectue des op…Èrations de maintenance. Consultez le site http://www.playonline.com/ pour une mise …¿ jour de PlayOnline et prendre connaissance des op…Èrations de maintenance pr…Èvues.\n"
+    HELP ""
+  END NODE
+  DEF SELECTNODE 42
+    LABEL "[‹@Ší]”½‰ž‚ª’x‚¢"
+    HEADER "ƒCƒxƒ“ƒg‚È‚Ç‚Å”ñí‚É‘½‚­‚Ìl‚ª‚P‚Â‚Ì‰æ–Ê“à‚Å•`‰æ‚³‚ê‚éê‡Al‚Ì‹‚È‚¢êŠ‚Ü‚ÅˆÚ“®‚µ‚Ä‚©‚çÄ“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B" "If a you are in an area with large number of players, try moving away from the crowd." "Wenn du in einer Gegend bist, in der sich sehr viele Spieler befinden, solltest du eine ruhigere Gegend aufsuchen." "Si vous …Étes en pr…Èsence de nombreux joueurs, essayez de vous en …Èloigner."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 43
+    LABEL "[isáŠQ]ˆÚ“®•s‰Âiƒ}ƒCƒ‹[ƒ€“àj"
+    HEADER "GM‚É‚æ‚èˆÚ“®‚ª§ŒÀ‚³‚ê‚Ä‚¢‚È‚¯‚ê‚ÎAƒRƒ“ƒgƒ[ƒ‰‚ÌŒÌá‚©A’nŒ`‚Ì•s‹ï‡‚É‚æ‚èˆÚ“®‚Å‚«‚È‚­‚È‚Á‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·BGM‚É‚æ‚é§ŒÀ‚ÉS“–‚½‚è‚ª‚ ‚éê‡‚ÍAGM‚ÌŽwŽ¦‚É]‚Á‚Ä‚­‚¾‚³‚¢B‹@Ší‚ÌŒÌá‚ª‹^‚í‚µ‚¢ê‡‚ÍAƒRƒ“ƒgƒ[ƒ‰‚ðˆê“x”²‚¢‚ÄÄ“x·‚µž‚ÞA‘¼‚ÌƒRƒ“ƒeƒ“ƒc‚Å‚Í—LŒø‚©‚È‚Ç‚ð‚¨’²‚×‚­‚¾‚³‚¢B‚¢‚¸‚ê‚Ìê‡‚Å‚à‚È‚­A’nŒ`‚É‚Í‚Ü‚Á‚Ä‚¢‚é‚æ‚¤‚Å‚ ‚ê‚ÎGM‚ª‹M•û‚ðˆÚ“®‰Â”\‚ÈÅ‚à‹ß‚¢ƒ|ƒCƒ“ƒg‚Ü‚ÅˆÚ“®‚³‚¹‚Ü‚·B" "First, a GM may be restricting your movement. If so, wait for instructions from the GM. If you think your controller is malfunctioning, try removing and reinserting your controller. You can also test your controller in other PlayOnline services. Lastly, if you are stuck inside a wall or other zone geometry, a GM can get you out." "Es ist m…Õglich, dass deine Bewegungsfreiheit durch einen GM eingeschr…Ãnkt wird. Wenn dies der Fall ist, warte bitte die Anweisungen des GM ab. Da es sich auch um ein Controller-Problem handeln k…Õnnte, solltest du die Verbindung des Controllers pr…Ûfen und den Controller kurz vom System trennen und erneut anschlie…¾en. Zum Testen des Controllers stehen au…¾erdem weitere PlayOnline-Dienste zur Verf…Ûgung. Wenn du in einer Wand oder anderen Struktur feststeckst, kann dir ein GM weiterhelfen." "Tout d'abord, un GM peut restreindre votre facult…È de d…Èplacement. Si tel est le cas, attendez ses instructions. Si vous pensez qu'il s'agit d'un dysfonctionnement de votre manette, d…Èbranchez-la, puis rebranchez-la. Vous pouvez …Ègalement tester votre manette …¿ l'aide d'autres services PlayOnline. Enfin, si vous …Étes g…Én…È par un mur ou tout autre obstacle, un GM peut y rem…Èdier."
+    HELP ""
+    SLOT 1 "GM‚É§ŒÀ‚³‚ê‚Ä‚¢‚é‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñBGM‚É‚æ‚éˆÚ“®‚ðŠó–]‚µ‚Ü‚·B" "I am stuck and need to get out. My movement is not being restricted by a GM." "Ich sitze fest und ben…Õtige Hilfe. Meine Bewegung wird nicht durch einen GM eingeschr…Ãnkt." "Je suis coinc…È et je dois sortir. Mes d…Èplacements ne sont pas limit…Ès par un GM."
+  END NODE
+  DEF SELECTNODE 44
+    LABEL "[isáŠQ]ˆÚ“®•s‰Â[WIN]"
+    HEADER "GM‚É‚æ‚èˆÚ“®‚ª§ŒÀ‚³‚ê‚Ä‚¢‚È‚¯‚ê‚ÎA“ü—Í‹@Ší‚ÌŒÌá‚©A’nŒ`‚Ì•s‹ï‡‚É‚æ‚èˆÚ“®‚Å‚«‚È‚­‚È‚Á‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·BGM‚É‚æ‚é§ŒÀ‚ÉS“–‚½‚è‚ª‚ ‚éê‡‚ÍAGM‚ÌŽwŽ¦‚É]‚Á‚Ä‚­‚¾‚³‚¢B‹@Ší‚ÌŒÌá‚ª‹^‚í‚µ‚¢ê‡‚ÍA“ü—Í‹@Ší‚ðˆê“x”²‚¢‚ÄÄ“x·‚µž‚ÞA‘¼‚ÌƒRƒ“ƒeƒ“ƒc‚Å‚Í—LŒø‚©‚È‚Ç‚ð‚¨’²‚×‚­‚¾‚³‚¢B‚¢‚¸‚ê‚Ìê‡‚Å‚à‚È‚­A’nŒ`‚É‚Í‚Ü‚Á‚Ä‚¢‚é‚æ‚¤‚Å‚ ‚ê‚ÎGM‚ª‹M•û‚ðˆÚ“®‰Â”\‚ÈÅ‚à‹ß‚¢ƒ|ƒCƒ“ƒg‚Ü‚ÅˆÚ“®‚³‚¹‚Ü‚·B" "First, a GM may be restricting your movement. If so, wait for instructions from the GM. If you think your controller is malfunctioning, try removing and reinserting your controller. You can also test your controller in other PlayOnline services. Lastly, if you are stuck inside a wall or other zone geometry, a GM can get you out." "Es ist m…Õglich, dass deine Bewegungsfreiheit durch einen GM eingeschr…Ãnkt wird. Wenn dies der Fall ist, warte bitte die Anweisungen des GM ab. Da es sich auch um ein Controller-Problem handeln k…Õnnte, solltest du die Verbindung des Controllers pr…Ûfen und den Controller kurz vom System trennen und erneut anschlie…¾en. Zum Testen des Controllers stehen au…¾erdem weitere PlayOnline-Dienste zur Verf…Ûgung. Wenn du in einer Wand oder anderen Struktur feststeckst, kann dir ein GM weiterhelfen." "Tout d'abord, un GM peut limiter vos d…Èplacements. Si tel est le cas, attendez ses instructions. Si vous pensez qu'il s'agit d'un dysfonctionnement de votre manette, d…Èbranchez-la, puis rebranchez-la. Vous pouvez …Ègalement tester votre manette …¿ l'aide d'autres services PlayOnline. Enfin, si vous …Étes g…Én…È par un mur ou tout autre obstacle, un GM peut y rem…Èdier."
+    HELP ""
+    SLOT 1 "GM‚É§ŒÀ‚³‚ê‚Ä‚¢‚é‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñBGM‚É‚æ‚éˆÚ“®‚ðŠó–]‚µ‚Ü‚·B" "I am stuck and need to get out. My movement is not being restricted by a GM." "Ich sitze fest und ben…Õtige Hilfe. Meine Bewegung wird nicht durch einen GM eingeschr…Ãnkt." "Je suis coinc…È et je dois sortir. Mes d…Èplacements ne sont pas restreints par un GM."
+    DISP 1 "GAME.INFIELD" "S:eq" "on"
+    SLOT 2 "GM‚É§ŒÀ‚³‚ê‚Ä‚¢‚é‚í‚¯‚Å‚Í‚ ‚è‚Ü‚¹‚ñBGM‚É‚æ‚éˆÚ“®‚ðŠó–]‚µ‚Ü‚·B" "I am stuck and need to get out. My movement is not being restricted by a GM." "Ich sitze fest und ben…Õtige Hilfe. Meine Bewegung wird nicht durch einen GM eingeschr…Ãnkt." "Je suis coinc…È et je dois sortir. Mes d…Èplacements ne sont pas restreints par un GM."
+    DISP 2 "GAME.INFIELD" "S:ne" "on"
+  END NODE
+  DEF SELECTNODE 45
+    LABEL "[‘€ì]‰ñ•œFWIN"
+    HEADER "“Á‚ÉƒƒbƒZ[ƒW‚à‚È‚­ƒLƒƒƒ‰ƒNƒ^[‚ªÀ‚èž‚ñ‚Å‚µ‚Ü‚Á‚½ê‡‚ÍA‚»‚ê‚Íƒq[ƒŠƒ“ƒOó‘Ô‚É‚ ‚é‚±‚Æ‚ðˆÓ–¡‚µ‚Ä‚¢‚Ü‚·BƒL[ƒ{[ƒh‚Ìƒeƒ“ƒL[–‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B\n\nƒJƒEƒ“ƒgƒ_ƒEƒ“‚ªs‚í‚ê‚Ä‚¢‚éê‡‚ÍA‚»‚ê‚ÍuƒƒOƒAƒEƒgv‚à‚µ‚­‚ÍuPlayOnlinev‚ªƒƒCƒ“ƒƒjƒ…[‚æ‚è‘I‘ð‚³‚ê‚½‚©‚ç‚Å‚·BÄ“x“¯‚¶ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚±‚Æ‚ÅƒLƒƒƒ“ƒZƒ‹‚ª‰Â”\‚Å‚·B" "Sitting down or kneeling means that your character is in healing mode. To stand up again, the * key on your keyboard, or simply move in any direction.\n\nIf you see countdown messages while kneeling, it means you have selected \"Logout\" or \"PlayOnline\" from the main menu. Press the * key to cancel the logout process." "Ein sitzender, bzw. kniender Charakter befindet sich im Heilmodus. Um wieder aufzustehen, kannst du entweder die \…D*\…S-Taste auf der Tastatur dr…Ûcken oder den Charakter in eine beliebige Richtung bewegen.\n\nWenn ein Countdown angezeigt wird, w…Ãhrend der Charakter kniet, dann hast du den Befehl \…DLogout\…S oder \…DPlayOnline\…S aus dem Hauptmen…Û ausgew…Ãhlt. Dr…Ûcke die \…D*\…S-Taste, um den Logout-Vorgang abzubrechen." "Lorsque votre personnage est assis ou agenouill…È, il est en mode de r…Ècup…Èration. Pour qu'il se rel…Çve, appuyez sur la touche * de votre clavier ou d…Èplacez-le vers une autre direction.\n\nSi des messages de compte …¿ rebours s'affichent alors que votre personnage est agenouill…È, cela signifie que vous avez s…Èlectionn…È \"D…Èconnexion\" ou \"PlayOnline\" dans le menu principal. Appuyez sur la touche * pour annuler le processus de d…Èconnexion."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 46
+    LABEL "[‘€ì]•à‚­[WIN]"
+    HEADER "u•à‚­^‘–‚év‚ÌØ‚è‘Ö‚¦‚ðs‚Á‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\nƒL[ƒ{[ƒh‚Ìƒeƒ“ƒL[ã•”‚É‚ ‚éu/v‚ð‰Ÿ‚·‚±‚Æ‚É‚æ‚èØ‚è‘Ö‚¦‚ª‰Â”\‚Å‚·B" "You may have switched between walk mode and run mode. Press the \"/\" key on your keyboard's number pad to toggle between them." "M…Õglicherweise hast du den Modus \…DGehen\…S eingestellt. Mit der Taste \…D/\…S des numerischen Ziffernblocks der Tastatur kannst du zwischen den Modi \…DGehen\…S und \…DLaufen\…S wechseln." "Vous …Étes peut-…Étre pass…È du mode marche au mode course. Appuyez sur la touche \"/\" de votre pav…È num…Èrique pour passer d'un mode …¿ l'autre."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 47
+    LABEL "[‘€ì]UŒ‚•s‰Â[WIN]"
+    HEADER "ƒ‚ƒ“ƒXƒ^[‚Ì–¼‘O‚ÌF‚ªƒsƒ“ƒNF‚É‚È‚Á‚Ä‚¢‚éê‡‚ÍA‘¼‚ÌƒvƒŒƒCƒ„[‚Ü‚½‚Íƒp[ƒeƒB‚ªŠù‚É‚»‚Ìƒ‚ƒ“ƒXƒ^[‚Æí‚Á‚Ä‚¢‚éó‘Ô‚Å‚·‚Ì‚ÅUŒ‚‚Å‚«‚Ü‚¹‚ñB–¼‘O‚ª”’F‚Ìƒ‚ƒ“ƒXƒ^[‚ÍAƒ^[ƒQƒbƒg‚µ‚ÄŒˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚µAƒAƒNƒVƒ‡ƒ“ƒRƒ}ƒ“ƒhƒEƒBƒ“ƒhƒE‚ÌuUŒ‚v‚ð‘I‘ð‚·‚é‚©AƒL[ƒ{[ƒh‚ÌCtrl‚à‚µ‚­‚ÍAlt‚ð‰Ÿ‚µ‚È‚ª‚çAƒL[‚ð‰Ÿ‚·‚±‚Æ‚ÅUŒ‚‚ªs‚¦‚Ü‚·B\n\n‹H‚ÉŽ©•ª‚¾‚¯‚ªŒ©‚¦‚Ä‘S‚­ˆÚ“®‚µ‚È‚¢AUŒ‚‚à‚Å‚«‚È‚¢‚Æ‚¢‚¤ƒ‚ƒ“ƒXƒ^[‚ª‚¢‚Ü‚·B‚±‚ê‚Í‚Ù‚Æ‚ñ‚Ç‚Ìê‡Žc‘œ‚Å‚·‚Ì‚ÅAˆê“xƒvƒŒƒCƒIƒ“ƒ‰ƒCƒ“‚É–ß‚èÄ“xƒQ[ƒ€‚É–ß‚é‚±‚Æ‚ÅÁ‚·‚±‚Æ‚ª‰Â”\‚Å‚·B" "If your target's name is white, you can attack it by targeting it and pressing confirm. The action command window will then appear; select \"Attack\" or press Ctrl+A (Alt+A) to begin auto-attack. If your target's name is pink, then it has already been attacked by another player or party. You cannot attack such monsters. If you find a monster that does not move, attack, or appear to other players, it is merely an afterimage. This can be remedied by returning to PlayOnline and logging back in." "Wenn der Name des Ziels wei…¾ angezeigt wird, kannst du es angreifen, indem du die Best…Ãtigungstaste dr…Ûckst. Daraufhin wird das Aktionsbefehlsfenster aufgerufen. W…Ãhle \…DAttacke\…S oder dr…Ûcke Strg+A (Alt+A), um das Ziel anzugreifen. Wenn der Name des Ziels lila angezeigt wird, befindet sich das Ziel bereits mit einem anderen Spieler oder einer anderen Gruppe im Kampf. Solche Monster kannst du nicht angreifen. Wenn sich ein Monster weder bewegt, angreift noch von anderen Spielern gesehen werden kann, handelt es sich um einen optischen Fehleffekt. Diesen kannst du beheben, indem du zu PlayOnline zur…Ûckkehrst und dich danach wieder anmeldest." "Si le nom de votre cible appara…Ít en blanc, vous pouvez l'attaquer en le ciblant et en appuyant sur le bouton Confirmer. La fen…Étre d'action s'affiche alors ; s…Èlectionnez \"Attaquer\" ou appuyez sur Ctrl+A (Alt+A) pour lancer l'attaque automatique. Si le nom de votre cible appara…Ít en rose, cela signifie qu'elle est d…Èj…¿ attaqu…Èe par un autre personnage ou une autre …Èquipe. Vous ne pouvez pas attaquer de tels monstres. Si vous rencontrez un monstre qui ne bouge pas, attaque ou appara…Ít devant d'autres joueurs, il s'agit probablement d'une image obsol…Çte. Pour y rem…Èdier, retournez …¿ PlayOnline et reconnectez-vous."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 48
+    LABEL "[‘€ì]ƒAƒCƒeƒ€®—[WIN]"
+    HEADER "ƒƒCƒ“ƒƒjƒ…[“à‚ÌuƒAƒCƒeƒ€v‚ð‘I‘ð‚·‚é‚ÆuƒŠƒXƒgƒIƒvƒVƒ‡ƒ“v‚Æ‚¢‚¤€–Ú‚ª•\Ž¦‚³‚ê‚Ü‚·BƒL[ƒ{[ƒh‚Ìƒeƒ“ƒL[+‚ð‰Ÿ‚·‚Æƒƒjƒ…[‚ª‘I‘ð‰Â”\‚É‚È‚è‚Ü‚·‚Ì‚ÅAu‚¹‚¢‚Æ‚ñv‚ð‘I‘ð‚µ‚Ü‚·B‚·‚é‚ÆƒJƒeƒSƒŠ[•Ê‚É•À‚Ñ‘Ö‚¦‚ªs‚í‚êAƒAƒCƒeƒ€–¼‚Ì‰E‘¤‚É”Žš‚ª•\Ž¦‚³‚ê‚éƒAƒCƒeƒ€‚Ìê‡‚ÍŽ©“®“I‚É“¯–¼‚ÌƒAƒCƒeƒ€‚ð‚Ü‚Æ‚ß‚ç‚ê‚Ü‚·B" "After selecting \"Items\" from the main menu, a sub-menu entitled \"Options\" will appear. Press the + key to access this menu. Selecting \"Auto\" from this menu automatically sorts your items by type. Stackable items of the same type will automatically stack." "Nach Auswahl der Option \…DItems\…S aus dem Hauptmen…Û wird ein Untermen…Û namens \…DOptionen\…S aufgerufen. Dr…Ûcke die \…D+\…S-Taste, um auf dieses Men…Û zuzugreifen. W…Ãhle aus diesem Men…Û \…DAuto\…S aus, um deine Items automatisch nach Typ zu sortieren. Dadurch werden au…¾erdem stapelbare Items automatisch gestapelt." "Apr…Çs avoir s…Èlectionn…È l'option \"Objets\" du menu principal, un sous-menu intitul…È \"Options\" s'affiche. Appuyez sur la touche Y de la manette ou + du clavier pour y acc…Èder. S…Èlectionnez l'option \"Auto\" de ce menu pour trier automatiquement vos objets par type. Les objets empilables du m…Éme type sont automatiquement empil…Ès."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 49
+    LABEL "[‘€ì]ƒJƒƒ‰‰ñ“]•s‰Â[WIN]"
+    HEADER "ƒ‚ƒ“ƒXƒ^[‚âPC‚ðƒ^[ƒQƒbƒg‚µ‚ÄƒAƒNƒVƒ‡ƒ“ƒRƒ}ƒ“ƒhƒEƒBƒ“ƒhƒE‚ªŠJ‚¢‚½ó‘Ô‚Å‚ÍA–îˆóƒL[‚ÅƒJƒƒ‰Ž‹“_‚Ì‰ñ“]‚ª‚Å‚«‚È‚­‚È‚è‚Ü‚·B\n‚»‚Ìê‡‚É‚ÍAShiftƒL[‚ð‰Ÿ‚µ‚È‚ª‚ç–îˆóƒL[‚ð‰Ÿ‚·‚±‚Æ‚É‚æ‚Á‚ÄAƒJƒƒ‰Ž‹“_‚ª•ÏX‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚·B" "If you have targeted a monster or PC and the action command window is open, the arrow keys are used to navigate the menu instead of adjusting the camera angle. Holding down Shift will let you use the arrow keys to change the camera angle again." "Wenn du ein Monster oder einen PC als Ziel ausgew…Ãhlt hast und das Aktionsbefehlsmen…Û angezeigt wird, kannst du mit den Richtungstasten das Men…Û navigieren, anstatt wie …Ûblich die Perspektive zu …Ãndern. Wenn du die Perspektive anpassen m…Õchtest, dann verwende die Richtungstasten bei gedr…Ûckter Umschalttaste." "Si vous avez cibl…È un monstre ou un PJ et que la fen…Étre d'action est ouverte, les touches fl…Èch…Èes vous permettent de naviguer dans le menu et non plus d'ajuster l'angle de la cam…Èra. Maintenez la touche Maj enfonc…Èe pour utiliser les touches fl…Èch…Èes afin de modifier …¿ nouveau l'angle de la cam…Èra."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 50
+    LABEL "[‹@Ší]ƒRƒ“ƒgƒ[ƒ‰•s‰Â[WIN]"
+    HEADER "Windows”Åƒtƒ@ƒCƒiƒ‹ƒtƒ@ƒ“ƒ^ƒW[XI‚Å‚ÍAƒRƒ“ƒgƒ[ƒ‰‚É‚æ‚é‘€ì‚Ì“®ì•ÛØ‚ð‚¢‚½‚µ‚Ä‚¨‚è‚Ü‚¹‚ñB\nƒQ[ƒ€‘€ì‚É‚ÍAƒL[ƒ{[ƒh‚ð‚¨Žg‚¢‚¢‚½‚¾‚¯‚Ü‚·‚æ‚¤‚¨Šè‚¢‚¢‚½‚µ‚Ü‚·B" "We cannot guarantee that any specific controller will be compatible with FINAL FANTASY XI for Windows. For now, please use your keyboard." "Wir k…Õnnen nicht garantieren, dass dein Controller mit FINAL FANTASY XI f…Ûr Windows kompatibel ist. Daher solltest du bis auf weiteres die Tastatur verwenden." "Nous ne pouvons garantir la compatibilit…È de toutes les manettes avec FINAL FANTASY XI pour Windows. Pour le moment, utilisez votre clavier."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 51
+    LABEL "[‹@Ší]ƒL[ƒ{[ƒh•s’²[WIN]"
+    HEADER "ˆê“xƒL[ƒ{[ƒh‚ðƒpƒ\ƒRƒ“–{‘Ì‚©‚ç”²‚«AÄ“x·‚µž‚ñ‚Å‚Ý‚Ä‚­‚¾‚³‚¢B‚»‚ê‚Å’¼‚ç‚È‚¯‚ê‚ÎƒL[ƒ{[ƒh‚ÌŒÌá‚ª‹^‚í‚ê‚Ü‚·B" "Try disconnecting and reconnecting the keyboard. If this does not solve the problem, there may be a problem with your keyboard." "Trenne die Tastatur und schlie…¾e sie wieder an. Wenn sich das Problem dadurch nicht beheben l…Ãsst, ist deine Tastatur eventuell defekt." "D…Èbranchez, puis rebranchez le clavier. Si le probl…Çme persiste, il est peut-…Étre li…È …¿ votre clavier."
+    HELP ""
+  END NODE
+  DEF SELECTNODE 52
+    LABEL "[‹@Ší]‘å•¶ŽšFWIN"
+    HEADER "ƒL[ƒ{[ƒh‚ÌCaps Lock‚ªƒIƒ“‚É‚È‚Á‚Ä‚¢‚é‚±‚Æ‚ªl‚¦‚ç‚ê‚Ü‚·BƒL[ƒ{[ƒh‚ÌCaps Lock‚ÌLED‚ª“_“”‚µ‚Ä‚¢‚È‚¢‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B\nLED‚ª“_“”‚µ‚Ä‚¢‚éê‡‚É‚ÍAˆê”Ê“I‚È“ú–{ŒêƒL[ƒ{[ƒh‚Å‚ÍAShift‚ð‰Ÿ‚µ‚È‚ª‚çCaps Lock‚ð‰Ÿ‚·‚±‚Æ‚Å‘å•¶Žš‚ª•W€ó‘Ô‚É‚È‚è‚Ü‚·B\n‚½‚¾‚µAƒL[ƒ{[ƒh‚É‚æ‚Á‚Ä‚ÍCaps@LockƒL[‚¾‚¯‚Å•W€ó‘Ô‚É‚È‚éê‡‚ª‚ ‚è‚Ü‚·‚Ì‚ÅAÚ‚µ‚­‚ÍƒL[ƒ{[ƒh‚ÌŽæ‚èˆµ‚¢à–¾‘‚ð‚²——‚­‚¾‚³‚¢B\n" "Your keyboard's Caps Lock may be on. If the Caps Lock light on your keyboard is on, press the Caps Lock key to return to lowercase. Check your keyboard manual for more details.\n" "M…Õglicherweise ist die Feststelltaste (Caps Lock) deiner Tastatur aktiviert. Wenn die Caps Lock-Anzeige auf der Tastatur leuchtet, dann dr…Ûcke die Feststelltaste, um wieder den normalen Kleinschreib-Modus zu aktivieren. N…Ãhere Hinweise hierzu findest du im Handbuch der Tastatur.\n" "La touche Verr Maj de votre clavier est peut-…Étre verrouill…Èe. Si le voyant correspondant est allum…È, appuyez sur la touche Verr Maj pour entrer des minuscules. Pour de plus amples informations, consultez le manuel relatif …¿ votre clavier.\n"
+    HELP ""
+  END NODE
+  DEF SELECTNODE 53
+    LABEL "[‘€ì]‰ï˜bŒÅ’èFWIN"
+    HEADER "u/tellvu/partyvó‘Ô‚ÉŒÅ’è‚³‚ê‚Ä‚¢‚Ü‚·B•ÏX‚·‚éê‡‚É‚ÍŽ©•ª‚ðƒ^[ƒQƒbƒg‚µ‚ÄŒˆ’èƒ{ƒ^ƒ“‚ð‰Ÿ‚µAƒAƒNƒVƒ‡ƒ“ƒRƒ}ƒ“ƒhƒEƒBƒ“ƒhƒE‚Ìuƒ`ƒƒƒbƒgv€–Ú‚©‚ç–îˆóƒL[‚Ì‰E‚ð‰Ÿ‚·‚±‚Æ‚É‚æ‚èA“KØ‚È‰ï˜bƒ‚[ƒh‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B" "Your chat mode is currently locked to /tell or /party. To switch to a different mode, target yourself and press enter. After selecting \"Chat\" from the Action Command Window, press the right arrow key to change your settings." "Dein Chat ist momentan im Modus /tell oder /party eingerastet. Um den Modus zu …Ãndern, musst du dich selbst als Ziel ausw…Ãhlen und die Eingabetaste dr…Ûcken. Dr…Ûcke nach Auswahl von \…DChat\…S im Aktionsbefehlsfenster die rechte Richtungstaste, um die Einstellung zu …Ãndern." "Votre mode de chat est actuellement verrouill…È sur /tell ou /party. Pour passer …¿ un autre mode, ciblez-vous et appuyez sur le bouton Confirmer. Apr…Çs avoir s…Èlectionn…È \"Chat\" dans la fen…Étre d'action, appuyez sur le bouton directionnel droit pour modifier vos param…Çtres."
+    HELP ""
+  END NODE
+  DEF LINK 1
+    UP 1 0 1
+  END LINK
+  DEF LINK 2
+    UP 2 0 22
+  END LINK
+  DEF LINK 3
+    UP 3 0 27
+  END LINK
+  DEF LINK 4
+    UP 4 0 38
+  END LINK
+  DEF LINK 5
+    UP 1 1 2
+  END LINK
+  DEF LINK 6
+    UP 2 1 21
+  END LINK
+  DEF LINK 7
+    UP 1 2 3
+  END LINK
+  DEF LINK 8
+    UP 2 2 9
+  END LINK
+  DEF LINK 9
+    UP 1 21 3
+  END LINK
+  DEF LINK 10
+    UP 2 21 9
+  END LINK
+  DEF LINK 11
+    UP 1 22 23
+  END LINK
+  DEF LINK 12
+    UP 5 22 44
+  END LINK
+  DEF LINK 13
+    UP 2 22 24
+  END LINK
+  DEF LINK 14
+    UP 3 22 25
+  END LINK
+  DEF LINK 15
+    UP 4 22 26
+  END LINK
+  DEF LINK 16
+    UP 1 23 4
+  END LINK
+  DEF LINK 17
+    UP 2 23 6
+  END LINK
+  DEF LINK 18
+    UP 1 25 7
+  END LINK
+  DEF LINK 19
+    UP 1 26 5
+  END LINK
+  DEF LINK 20
+    UP 1 27 28
+  END LINK
+  DEF LINK 21
+    UP 2 27 29
+  END LINK
+  DEF LINK 22
+    UP 3 27 30
+  END LINK
+  DEF LINK 23
+    UP 11 27 45
+  END LINK
+  DEF LINK 24
+    UP 4 27 31
+  END LINK
+  DEF LINK 25
+    UP 12 27 46
+  END LINK
+  DEF LINK 26
+    UP 5 27 32
+  END LINK
+  DEF LINK 27
+    UP 16 27 53
+  END LINK
+  DEF LINK 28
+    UP 6 27 33
+  END LINK
+  DEF LINK 29
+    UP 7 27 34
+  END LINK
+  DEF LINK 30
+    UP 13 27 47
+  END LINK
+  DEF LINK 31
+    UP 8 27 35
+  END LINK
+  DEF LINK 32
+    UP 15 27 48
+  END LINK
+  DEF LINK 33
+    UP 9 27 36
+  END LINK
+  DEF LINK 34
+    UP 14 27 49
+  END LINK
+  DEF LINK 35
+    UP 10 27 37
+  END LINK
+  DEF LINK 36
+    UP 1 38 39
+  END LINK
+  DEF LINK 37
+    UP 7 38 52
+  END LINK
+  DEF LINK 38
+    UP 2 38 40
+  END LINK
+  DEF LINK 39
+    UP 3 38 41
+  END LINK
+  DEF LINK 40
+    UP 4 38 42
+  END LINK
+  DEF LINK 41
+    UP 5 38 50
+  END LINK
+  DEF LINK 42
+    UP 1 44 4
+  END LINK
+  DEF LINK 43
+    UP 2 44 6
+  END LINK
+END DATASET

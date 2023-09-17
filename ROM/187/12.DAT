@@ -1,0 +1,9 @@
+;rme infomation
+;last update by SQUARE-ENIX
+;last update user ip dosv-gondai2
+#resourcefile	Rmp	evil
+#file		%PROJ%\obj\ex_mon\evil2a_0\evil2a_main.rmp
+#resourcefile	Rmp	mot_
+#file		%PROJ%\obj\ex_mon\evil2a_0\09_w_kon\mot_wkon0.rmp
+#resourcefile	Rmp	wepa
+#file		%PROJ%\obj\ex_mon\evil2a_0\09_w_kon\wepa1_ex.rmp
